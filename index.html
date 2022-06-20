@@ -12,6 +12,9 @@
     <!-- BOOTSTRAP CDN -->
     <link href="./vendor/bootstrap.min.css" rel="stylesheet">
 
+    <!--   FONT AWESOME ICONS -->
+    <!-- <link rel="stylesheet" href="./vendor/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- DEFAULT CSS -->
     <link rel="stylesheet" href="./app/css/main.css">
 </head>
@@ -20,26 +23,28 @@
 
     <h1 class="display-3 text-center mt-5">Cost Calculator</h1>
     <p class="lead text-center">Record your income and expense</p>
+    <p class="lead text-center"> <b>Current Balance: <span>$0</span></b> </p>
 
 
     <!-- calculator input container -->
     <div class="container mt-5 pt-5 calculator-container">
+
         <!-- journal description -->
-        <label for="Todays_Journal" class="form-label"> <small>What's Did you do Today?</small></label>
+        <label for="Todays_Journal" class="form-label"> <small>What's Did you do Today?</small> <span class="tooltip-js journal-Head-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
         <input class="form-control mb-3 journal-head" type="text" placeholder="Example: Bought food from store"
             aria-label="Todays_Journal">
 
         <!-- journal description -->
-        <label for="Todays_Journal" class="form-label"><small>How Much?</small></label>
+        <label for="Todays_Journal" class="form-label"><small>How Much?</small> <span class="tooltip-js journal-Cost-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
         <input class="form-control mb-3 journal-amount" type="text" placeholder="Example: 200" aria-label="Todays_Journal">
 
 
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea  <span class="tooltip-js journal-Description-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
         <textarea class="form-control journal-details" id="exampleFormControlTextarea1" rows="3"></textarea>
 
         <!-- income and expense decision taking -->
-        <button type="button" class="btn btn-primary mt-3 get-data-btn"><em>Income</em> </button> <button type="button"
-            class="btn btn-danger mt-3 get-data-btn"><em>Expense</em></button>
+        <button type="button" class="btn mt-3 get-data-btn income-btn"><em> <b>Income</b> </em> </button> <button type="button"
+            class="btn mt-3 get-data-btn expense-btn"><em> <b>Expense</b> </em></button>
         <br>
 
     </div>
@@ -51,23 +56,16 @@
         <div class="container mt-5">
 
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 income-category-journal">
                     <h6 class="text-center"><em> Income</em></h6>
 
                     <!-- record container -->
-                    <div class="container record-container__container d-flex">
-                        <div class="item-container w-75 record-container__journalHeader">Journal Header</div>
-                        <div class="item-container w-25 record-container__money">Money</div>
-                    </div>
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 expense-category-journal">
                     <h6 class="text-center"><em> Expense</em></h6>
 
-                    <div class="container record-container__container d-flex">
-                        <div class="item-container w-75 record-container__journalHeader">Journal Header</div>
-                        <div class="item-container w-25 record-container__money">Money</div>
-                    </div>
+                    <!-- record container -->
                 </div>
 
             </div>
