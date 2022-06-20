@@ -1,7 +1,40 @@
+/* EXPERIMENT PURPOSE CSS */
 .calculator-container{
     width: 35%;
-    display: none;
+    /* display: none; */
 }
+.record-container{
+    /* display: none; */
+}
+
+
+/* MANIPULATE CSS */
+.record-container__container{
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+.record-container__journalHeader{
+    overflow: hidden;
+}
+.record-container__money{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1200px){
     .calculator-container{
         width: 55%;
