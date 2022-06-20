@@ -1,0 +1,19 @@
+.calculator-container{
+    width: 35%;
+    display: none;
+}
+@media only screen and (max-width: 1200px){
+    .calculator-container{
+        width: 55%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .calculator-container{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .calculator-container{
+        width: 95%;
+    }
+}

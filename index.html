@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="keywords" content="cost calculator, cost saving, savings recorder" />
+    <title> Cost Calsulator</title>
+
+    <!-- BOOTSTRAP CDN -->
+    <link href="./vendor/bootstrap.min.css" rel="stylesheet">
+
+    <!-- DEFAULT CSS -->
+    <link rel="stylesheet" href="./app/css/main.css">
+</head>
+
+<body>
+
+    <h1 class="display-3 text-center mt-5">Cost Calculator</h1>
+    <p class="lead text-center">Record your income and expense</p>
+
+
+    <!-- calculator input container -->
+    <div class="container mt-5 pt-5 calculator-container">
+        <!-- journal description -->
+        <label for="Todays_Journal" class="form-label"> <small>What's Did you do Today?</small></label>
+        <input class="form-control mb-3" type="text" placeholder="Example: Bought food from store"
+            aria-label="Todays_Journal">
+
+        <!-- journal description -->
+        <label for="Todays_Journal" class="form-label"><small>How Much?</small></label>
+        <input class="form-control mb-3" type="text" placeholder="Example: 200" aria-label="Todays_Journal">
+
+
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+        <!-- income and expense decision taking -->
+        <button type="button" class="btn btn-primary mt-3"><em>Income</em> </button> <button type="button"
+            class="btn btn-danger mt-3"><em>Expense</em></button>
+        <br>
+
+    </div>
+
+    <div class="container record-container mt-5">
+        <h5 class="journal-report text-center">Journal Report</h5>
+
+        <!-- GRID CONTAINER -->
+        <div class="container mt-5">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    Income
+                </div>
+
+                <div class="col-sm-6">
+                    Column
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JAVASCRIPT SCRIPT -->
+    <script src="./vendor/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
