@@ -30,21 +30,21 @@
     <div class="container mt-5 pt-5 calculator-container">
 
         <!-- journal description -->
-        <label for="Todays_Journal" class="form-label"> <small>What's Did you do Today?</small> <span class="tooltip-js journal-Head-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
+        <label for="Todays_Journal" class="form-label"> <small> <b> What's Did you do Today?</b></small> <span class="tooltip-js journal-Head-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
         <input class="form-control mb-3 journal-head" type="text" placeholder="Example: Bought food from store"
-            aria-label="Todays_Journal">
+            aria-label="Todays_Journal" maxlength="24">
 
         <!-- journal description -->
-        <label for="Todays_Journal" class="form-label"><small>How Much?</small> <span class="tooltip-js journal-Cost-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
+        <label for="Todays_Journal" class="form-label"><small> <b> How Much?</b></small> <span class="tooltip-js journal-Cost-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
         <input class="form-control mb-3 journal-amount" type="text" placeholder="Example: 200" aria-label="Todays_Journal">
 
 
-        <label for="exampleFormControlTextarea1" class="form-label">Example textarea  <span class="tooltip-js journal-Description-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
+        <label for="exampleFormControlTextarea1" class="form-label"> <b> <small>Care to write more in details?</small> </b>   <span class="tooltip-js journal-Description-Tooltip"><i class="fa-solid fa-circle-question ms-3"></i></span></label>
         <textarea class="form-control journal-details" id="exampleFormControlTextarea1" rows="3"></textarea>
 
         <!-- income and expense decision taking -->
-        <button type="button" class="btn mt-3 get-data-btn income-btn"><em> <b>Income</b> </em> </button> <button type="button"
-            class="btn mt-3 get-data-btn expense-btn"><em> <b>Expense</b> </em></button>
+        <button type="button" class=" mt-3 get-data-btn income-btn"> save as income (+) </button> <button type="button"
+            class=" mt-2 get-data-btn expense-btn">save as expense (&dash;)</button>
         <br>
 
     </div>
@@ -58,7 +58,17 @@
             <div class="row">
                 <div class="col-sm-6 income-category-journal">
                     <h6 class="text-center"><em> Income</em></h6>
-
+                    <div class="container record-container__container d-flex mt-2 justify-content-between align-items-center">
+                        <div class="item-container record-container__journalHeader"> on computer </div>
+                        <div class="item-container record-container__money" > $200 </div>
+                        <div class="record-container__btn-section">
+                            <div class="record-container__Details-btn record-container__btn btn btn-info" > Details </div>
+                            <div class="record-container__Delete-btn record-container__btn btn btn-danger" > Delete </div>
+                            <div class="record-container__Edit-btn record-container__btn btn btn-dark" > Edit </div>
+                        </div>
+                        
+                    </div>
+                    
                     <!-- record container -->
                 </div>
 
@@ -71,6 +81,13 @@
             </div>
         </div>
     </div>
+
+
+    <!-- <div class="journal-details-container">
+        <h3>Journal Header</h3>
+        <p class="">Journal </p>
+    </div> -->
+
 
     <!-- BOOTSTRAP JAVASCRIPT SCRIPT -->
     <script src="./vendor/bootstrap.bundle.min.js"></script>

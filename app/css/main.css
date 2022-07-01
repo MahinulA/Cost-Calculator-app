@@ -1,24 +1,55 @@
 /* EXPERIMENT PURPOSE CSS */
-.calculator-container{
-    width: 35%;
-    /* display: none; */
-}
-.record-container{
-    /* display: none; */
-}
+
 
 
 /* MANIPULATE CSS */
-/* income and expense button */
-.income-btn{
-    background-color: #18dcff;
-    color: white;
-}
-.expense-btn{
-    background-color: #ff9f1a;
-    color: white;
+body{
+    background-color: #ddd;
+    color: rgba(0, 0, 0, 0.69);
 }
 
+
+/* income and expense button */
+.income-btn, .expense-btn{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.103);
+    font-weight:500;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+.income-btn{
+    color: rgba(0, 0, 0, 0.788);
+    border: 2px solid #11d27898;
+}
+
+.expense-btn{
+    color: rgba(0, 0, 0, 0.733);
+    border: 2px solid #f33e0767;
+}
+
+.expense-btn:hover{
+    background-color: #f33e07;
+    color: rgba(252, 249, 249, 0.877);
+    border: 2px solid #f33e07;
+}
+.income-btn:hover,.expense-btn:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+.income-btn:hover{
+    background-color: #11d278e5;
+    color: rgba(250, 250, 250, 0.877);
+    border: 2px solid #11d279;
+}
 
 /* tooltip CSS */
 .tooltip-js{
@@ -57,7 +88,7 @@
 
 /* record container */
 .record-container__container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 13px;
@@ -68,11 +99,17 @@
 .record-container__money{
     text-align:center;
 }
+.record-container__btn{
+    font-size: 13px;
+}
+.record-container__Details-btn{
+    color: white;
+}
 
 
-
-
-
+.calculator-container{
+    width: 25%;
+}
 
 
 
